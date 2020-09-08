@@ -45,6 +45,7 @@ cfg.groups = {
   "chatrules.designer"
   },
   ["admin"] = {
+  "admin.whitelisted",
   "player.group.add",
   "player.group.remove",
   "admin.tickets",
