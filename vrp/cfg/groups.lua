@@ -1074,6 +1074,7 @@ cfg.groups = {
   "elysium.company.casino.executive",
   "elysium.company.casino",
   "elysium.company",
+  "casino.whitelisted",
   "casino.ceosalary.paycheck"
 },
 ["카지노 부대표"] = {
@@ -1084,6 +1085,7 @@ cfg.groups = {
   "elysium.company.casino.executive",
   "elysium.company.casino",
   "elysium.company",
+  "casino.whitelisted",
   "casino.ceosalary2.paycheck"
 },
 ["카지노 전무이사"] = {
@@ -1092,6 +1094,7 @@ cfg.groups = {
   },
   "elysium.company",
   "elysium.company.casino",
+  "casino.whitelisted",
   "casino.salary1.paycheck"
   },
   ["카지노 상무이사"] = {
@@ -1108,6 +1111,7 @@ cfg.groups = {
   },
   "elysium.company",
   "elysium.company.casino",
+  "casino.whitelisted",
   "casino.salary3.paycheck"
 },
   ["카지노 매니저"] = {
@@ -1116,6 +1120,7 @@ cfg.groups = {
   },
   "elysium.company",
   "elysium.company.casino",
+  "casino.whitelisted",
   "casino.salary4.paycheck"
 },
   ["카지노 딜러"] = {
@@ -1124,6 +1129,7 @@ cfg.groups = {
   },
   "elysium.company",
   "elysium.company.casino",
+  "casino.whitelisted",
   "casino.salary5.paycheck"
 },
   ["카지노 사원"] = {
@@ -1132,6 +1138,7 @@ cfg.groups = {
   },
   "elysium.company",
   "elysium.company.casino",
+  "casino.whitelisted",
   "casino.salary6.paycheck"
 },
   ["카지노 청소부"] = {
@@ -1140,6 +1147,7 @@ cfg.groups = {
   },
   "elysium.company",
   "elysium.company.casino",
+  "casino.whitelisted",
   "casino.salary7.paycheck"
 },
 
@@ -4352,92 +4360,8 @@ onspawn = function(player) vRPclient.notify(player,{"당신은 검찰청 부장�
   "prison.door",
   "prisoner.cloakroom",
 	"official.9.paycheck"
-},
-
-
-
-  ["LSIA 공항 경찰"] = {
-    _config = { 
-      gtype = "job",
-      onjoin = function(player) vRPclient.setCop(player,{true}) end,
-      onspawn = function(player) vRPclient.setCop(player,{true}) end,
-      onleave = function(player) vRPclient.setCop(player,{true}) end
-    },
-	"chatrules.lsia",
-  "Officer.cloakroom",
-	"highway.cloakroom",
-  "police.pc",
-  --"police.handcuff",
-  "police.putinveh",
-  "police.getoutveh",
-	"police.drag",
-	"police.easy_cuff",
-	"police.easy_fine",
-	"police.easy_jail",
-	"police.easy_unjail",
-	"police.spikes",
-	"police.menu",
-  "police.check",
-	"police.freeze",
-  "police.service",
-  "police.wanted",
-  "police.seize.weapons",
-  "police.seize.items",
-  --"police.jail",
-  --"police.fine",
-  "police.announce",
-  -- "-police.store_weapons",
-  "-police.seizable",	-- negative permission, police can't seize itself, even if another group add the permission
-	"police.vehicle",
-	"police.loadshop",
-	"cop.whitelisted",
-	--"player.list",
-	"police.paycheck",
-	"police.mission",
-	--"player.blips",
-	"police.menu_interaction",
-	"admin.deleteveh"
   },
-  ["Police Detective"] = {  
-    _config = { 
-      gtype = "job",
-      onjoin = function(player) vRPclient.setCop(player,{true}) end,
-      onspawn = function(player) vRPclient.setCop(player,{true}) end,
-      onleave = function(player) vRPclient.setCop(player,{true}) end
-    },
-    "Detective.cloakroom",
-	"highway.cloakroom",
-    "police.pc",
-    --"police.handcuff",
-    "police.putinveh",
-    "police.getoutveh",
-    "police.service",
-    "police.wanted",
-    "police.seize.weapons",
-    "police.seize.items",
-    --"police.jail",
-    --"police.fine",
-	"police.drag",
-	"police.easy_cuff",
-	"police.easy_fine",
-	"police.easy_jail",
-	"police.easy_unjail",
-	"police.spikes",
-	"police.menu",
-  "police.check",
-	"police.freeze",
-    "police.announce",
-   -- "-police.store_weapons",
-    "-police.seizable",	-- negative permission, police can't seize itself, even if another group add the permission
-	"police.vehicle",
-	"police.loadshop",
-	"cop.whitelisted",
-	--"player.list",
-	"Detective.paycheck",
-	"police.menu_interaction",
-	--"player.blips",
-	"police.mission"
-  },
+
   ["emsservice"] = {
     "emergency.service"
   },
@@ -6943,6 +6867,7 @@ onspawn = function(player) vRPclient.notify(player,{"당신은 검찰청 부장�
   ["cop"] = {
     "cop.whitelisted"
   },
+  
   ["Exotic Car Dealer"] = {
    	_config = { gtype = "job",
 	  onspawn = function(player) vRPclient.notify(player,{"You are an Exotic Car Dealer"}) end
