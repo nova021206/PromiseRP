@@ -12,11 +12,11 @@ RegisterServerEvent('police:check')
 AddEventHandler('police:check', function(hook)
 	local user_id = vRP.getUserId({source})
 	local player = vRP.getUserSource({user_id})
-	 local polices = vRP.getUsersByPermission({"SWAT.loadshop"})
+	 local polices = vRP.getUsersByPermission({"cop.whitelisted"})
   if user_id ~= nil then
-    if #polices >= 3 then
+    if #polices >= 5 then
       TriggerClientEvent("continue:rob", player)
-      --vRPclient.notify(player,{"~g~경찰이 접속중입니다!"})
+      vRPclient.notify(player,{"~g~경찰이 접속중입니다!"})
     else
       TriggerClientEvent("getout:here", player)
       vRPclient.notify(player,{"~r~경찰이 부족합니다!"})
@@ -29,7 +29,7 @@ AddEventHandler('cop:check', function(hook)
 	local user_id = vRP.getUserId({source})
 	local player = vRP.getUserSource({user_id})
   if user_id ~= nil then
-    if vRP.hasPermission({user_id,"SWAT.loadshop"}) then
+    if vRP.hasPermission({user_id,"cop.whitelisted"}) then
       TriggerClientEvent("getout:here", player)
       vRPclient.notify(player,{"~r~경찰은 보석상을 털 수 없습니다!"})
 end
@@ -67,7 +67,7 @@ RegisterServerEvent('jewelryrobberry:allarmpolice')
 AddEventHandler('jewelryrobberry:allarmpolice', function()
     local user_id = vRP.getUserId({source})
     local player = vRP:getUserSource({user_id})
-    local cops = vRP.hasPermission({"SWAT.loadshop"})
+    local cops = vRP.hasPermission({"cop.whitelisted"})
     vRPclient.getPosition(source,{},function(x,y,z)
 		  vRP.sendServiceAlert({source,"112 긴급",-630.17553710938,-236.52540588379,38.0570602416992-0.95,"[보석상 강도 자동 신고]"})
 		  end)
