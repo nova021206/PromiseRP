@@ -1086,7 +1086,7 @@ cfg.groups = {
   "elysium.company",
   "casino.ceosalary2.paycheck"
 },
-["카지노 매니저"] = {
+["카지노 전무이사"] = {
   _config = { gtype = "job",
 	onspawn = function(player) vRPclient.notify(player,{""}) end
   },
@@ -1094,7 +1094,7 @@ cfg.groups = {
   "elysium.company.casino",
   "casino.salary1.paycheck"
   },
-  ["카지노 실장"] = {
+  ["카지노 상무이사"] = {
   _config = { gtype = "job",
 	onspawn = function(player) vRPclient.notify(player,{""}) end
   },
@@ -1102,7 +1102,7 @@ cfg.groups = {
   "elysium.company.casino",
   "casino.salary2.paycheck"
   },
-  ["카지노 부장"] = {
+  ["카지노 팀장"] = {
   _config = { gtype = "job",
 	onspawn = function(player) vRPclient.notify(player,{""}) end
   },
@@ -1110,7 +1110,7 @@ cfg.groups = {
   "elysium.company.casino",
   "casino.salary3.paycheck"
 },
-  ["카지노 과장"] = {
+  ["카지노 매니저"] = {
   _config = { gtype = "job",
 	onspawn = function(player) vRPclient.notify(player,{""}) end
   },
@@ -1118,7 +1118,7 @@ cfg.groups = {
   "elysium.company.casino",
   "casino.salary4.paycheck"
 },
-  ["카지노 대리"] = {
+  ["카지노 딜러"] = {
   _config = { gtype = "job",
 	onspawn = function(player) vRPclient.notify(player,{""}) end
   },
@@ -1134,7 +1134,7 @@ cfg.groups = {
   "elysium.company.casino",
   "casino.salary6.paycheck"
 },
-  ["카지노 인턴"] = {
+  ["카지노 청소부"] = {
   _config = { gtype = "job",
 	onspawn = function(player) vRPclient.notify(player,{""}) end
   },
