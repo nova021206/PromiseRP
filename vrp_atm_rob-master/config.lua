@@ -2,7 +2,7 @@ Config = {}
 Config.timeout = 600 -- ATM 털이 쿨타임 (초)
 Config.reward = {
     min = 1500000,
-    max = 1500000,
+    max = 2000000,
 }
 distanta = 15.0
 marker = {

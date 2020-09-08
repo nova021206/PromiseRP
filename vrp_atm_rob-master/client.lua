@@ -31,7 +31,7 @@ end)
 
 RegisterNUICallback("win",function(data,cb)
     	TriggerServerEvent("fn_atm_rob:win",function()
-        vRP.notitfy({"~g~당신은 ATM을 해킹에 성공 하였습니다!"})
+        vRP.notitfy({"~g~당신은 ATM 해킹에 성공 하였습니다!"})
         toggleMenu(false,false)
         timeout = Config.timeout
     end)
