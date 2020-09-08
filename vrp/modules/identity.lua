@@ -36,6 +36,25 @@ MySQL.execute("vRP/identity_tables")
 MySQL.createCommand("vRP/get_user_identities", "SELECT * FROM vrp_user_identities WHERE user_id in (@user_ids)")
 
 
+function joinStrings(list, sep)
+  if sep == nil then
+    sep = ""
+  end
+
+  local str = ""
+  local count = 0
+  local size = #list
+  for k, v in pairs(list) do
+    count = count + 1
+    str = str .. v
+    if count < size then
+      str = str .. sep
+    end
+  end
+
+  return str
+end
+
 function vRP.getUserIdentities(arr_user_ids, cbr)
   if cbr == nil then
     return
@@ -45,9 +64,10 @@ function vRP.getUserIdentities(arr_user_ids, cbr)
     task({})
     return
   end
+  local szUserId = joinStrings(arr_user_ids, ",")
   MySQL.query(
     "vRP/get_user_identities",
-    {user_ids = arr_user_ids},
+    {user_ids = szUserId},
     function(rows, affected)
       if rows == nil then
         task({})
