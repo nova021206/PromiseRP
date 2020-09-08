@@ -134,6 +134,27 @@ cfg.market_types = {
     ["cigar2"] = 2250,
 	["rod"] = 80000,
 	["bait"] = 1500,
+		
+	-- 회
+	["nogada1"] = 0,
+	["nogada2"] = 0,
+	["nogada3"] = 0,
+	["nogada4"] = 0,
+	["nogada5"] = 0,
+	["nogada6"] = 0,
+	["nogada7"] = 0,
+	["nogada8"] = 0,
+	["nogada9"] = 0,
+	["nogada10"] = 0,
+	["nogada11"] = 0,
+	["nogada12"] = 0,
+	["nogada13"] = 0,
+	["nogada14"] = 0,
+	["nogada15"] = 0,
+	["nogada16"] = 0,
+	["nogada17"] = 0,
+	["nogada18"] = 0,
+	
   },
   --["drugstore"] = {
   --  _config = {blipid=51, blipcolor=2},
