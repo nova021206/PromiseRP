@@ -112,6 +112,27 @@ items["pizza2"] = {"고르곤졸라 피자","", gen("eat",-25,5),0.5}
 items["peperoni"] = {"페페로니","", gen("eat",-25,5),0.5}
 items["pizza3"] = {"마르게리타 피자","", gen("eat",-25,5),0.5}
 
+--회
+items["nogada1"] = {"청세치 회","", gen("eat",-21,5),0.5}
+items["nogada2"] = {"돗돔 회","", gen("eat",-23,5),0.5}
+items["nogada3"] = {"오징어 젓갈","", gen("eat",-22,5),0.5}
+items["nogada4"] = {"상어 회","", gen("eat",-27,5),0.5}
+items["nogada5"] = {"참치 회","", gen("eat",-21,5),0.5}
+items["nogada6"] = {"돌돔 회","", gen("eat",-25,5),0.5}
+items["nogada7"] = {"감성돔 회","", gen("eat",-25,5),0.5}
+items["nogada8"] = {"벵에돔 회","", gen("eat",-25,5),0.5}
+items["nogada9"] = {"대왕 한치 회","", gen("eat",-25,5),0.5}
+items["nogada10"] = {"벵에돔 회","", gen("eat",-25,5),0.5}
+items["nogada11"] = {"문어 찜","", gen("eat",-21,5),0.5}
+items["nogada12"] = {"대게 찜","", gen("eat",-23,5),0.5}
+items["nogada13"] = {"참돔 회","", gen("eat",-23,5),0.5}
+items["nogada14"] = {"광어 회","", gen("eat",-24,5),0.5}
+items["nogada15"] = {"장어구이","", gen("eat",-25,5),0.5}
+items["nogada16"] = {"갈치조림","", gen("eat",-25,1),0.5}
+items["nogada17"] = {"고등어 구이","", gen("eat",-25,2),0.5}
+items["nogada18"] = {"숭어 매운탕","", gen("eat",-25,5),0.5}
+
+
 --stake
 items["stake1"] = {"티본스테이크","", gen("eat",-45,0),0.5}
 items["stake2"] = {"시그니처 센터컷 스테이크","", gen("eat",-45,0),0.5}
